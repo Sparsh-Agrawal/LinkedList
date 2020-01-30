@@ -35,4 +35,18 @@ public class MyLinkedList
             temp.setNext(node);
         }
     }
+
+    //traverse
+    public void printList()
+    {
+        System.out.println("Printing List.......");
+        Node temp=head;
+        while(temp!=null)
+        {
+            System.out.print(temp.getData());
+            temp=temp.getNext();
+            System.out.print(" ---> ");
+        }
+        System.out.print("null");
+    }
 }

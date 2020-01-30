@@ -9,5 +9,6 @@ public class MyLinkedListImplementation
         MyLinkedList linkedList=new MyLinkedList();
         linkedList.insertAtLast(20);
         linkedList.insertAtLast(10);
+        linkedList.printList();
     }
 }
