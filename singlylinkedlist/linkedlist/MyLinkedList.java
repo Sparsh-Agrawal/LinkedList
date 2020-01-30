@@ -48,5 +48,14 @@ public class MyLinkedList
             System.out.print(" ---> ");
         }
         System.out.print("null");
+        System.out.println("\n**********************************************************\n");
+    }
+
+    //insert at beginning
+    public void insertAtBeginning(int data)
+    {
+        Node node=new Node(data);
+        node.setNext(head);
+        head=node;
     }
 }
