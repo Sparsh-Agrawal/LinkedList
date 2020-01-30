@@ -58,4 +58,16 @@ public class MyLinkedList
         node.setNext(head);
         head=node;
     }
+
+    //delete from beginning
+    public Node deleteFromBeginning()
+    {
+        Node response=null;
+        response=head;
+        if(head!=null)
+        {
+            head = head.getNext();
+        }
+        return response;
+    }
 }
