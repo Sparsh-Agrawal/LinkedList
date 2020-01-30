@@ -39,6 +39,7 @@ public class MyLinkedList
     //traverse
     public void printList()
     {
+        System.out.println("\n**********************************************************");
         System.out.println("Printing List.......");
         Node temp=head;
         while(temp!=null)
@@ -67,6 +68,33 @@ public class MyLinkedList
         if(head!=null)
         {
             head = head.getNext();
+        }
+        return response;
+    }
+
+    //delete from last
+    public Node deleteFromLast()
+    {
+        Node response=null;
+        if(head!=null)
+        {
+            Node temp=head;
+            Node previous=null;
+            while (temp.getNext()!=null)
+            {
+                previous=temp;
+                temp=temp.getNext();
+            }
+            if(previous!=null)
+            {
+                response=previous.getNext();
+                previous.setNext(null);
+            }
+            else
+            {
+                response=head;
+                head=null;
+            }
         }
         return response;
     }
